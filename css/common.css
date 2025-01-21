@@ -1,0 +1,434 @@
+@charset "utf-8";
+@import url(style.scss);
+@import url(reset.css);
+@import url(common.css);
+@import url(respons.css);
+
+@font-face {
+    font-family: 'Syncopate';
+    src: url('font/Syncopate/Syncopate-Regular.eot');
+    src: url('font/Syncopate/Syncopate-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Syncopate/Syncopate-Regular.woff2') format('woff2'),
+        url('font/Syncopate/Syncopate-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 100;
+	src: url('font/SUIT-woff2/SUIT-Thin.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 200;
+	src: url('font/SUIT-woff2/SUIT-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 300;
+	src: url('font/SUIT-woff2/SUIT-Light.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 400;
+	src: url('font/SUIT-woff2/SUIT-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 500;
+	src: url('font/SUIT-woff2/SUIT-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 600;
+	src: url('font/SUIT-woff2/SUIT-SemiBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 700;
+	src: url('font/SUIT-woff2/SUIT-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 800;
+	src: url('font/SUIT-woff2/SUIT-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 900;
+	src: url('font/SUIT-woff2/SUIT-Heavy.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-ExtraBold.eot');
+    src: url('font/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('font/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Bold.eot');
+    src: url('font/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Bold.woff2') format('woff2'),
+        url('font/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Black.eot');
+    src: url('font/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Black.woff2') format('woff2'),
+        url('font/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Light.eot');
+    src: url('font/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Light.woff2') format('woff2'),
+        url('font/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-ExtraLight.eot');
+    src: url('font/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('font/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Medium.eot');
+    src: url('font/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Medium.woff2') format('woff2'),
+        url('font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-SemiBold.eot');
+    src: url('font/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-SemiBold.woff2') format('woff2'),
+        url('font/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Regular.eot');
+    src: url('font/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Regular.woff2') format('woff2'),
+        url('font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('font/Pretendard-Thin.eot');
+    src: url('font/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/Pretendard-Thin.woff2') format('woff2'),
+        url('font/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+	font-size: 16px;
+}
+body {
+    font-size: 1rem;
+    color: #333;
+	background-color: #FFF7F0; 
+    overflow-x: hidden;
+}
+
+.title {
+	font-family: 'SUIT';
+	font-weight: 900;
+	font-size: 3.125rem;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.best_nav_image {
+    background-color: #fff;
+}
+.best_nav_image.active {
+    box-shadow: 0 0 0 5px #DCBD9E inset;
+}
+/* 메인이든 서브든 공통적으로 쓰이는 스타일을 정리함 대충 컴포넌트 영역, 리셋은 전체적인 초기값 영역 */
+
+/* header */
+
+  .header.on {
+    width: 100%;
+    height: 100px;
+    color: #402E32;
+    background-color: transparent;
+  }
+  .header.on:hover {
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .header .inner {
+    max-width: 1920px;
+    width: calc(100% - 200px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .inner .logo {
+    font-family: "SUIT";
+    font-weight: 900;
+    font-size: 2.125rem;
+    line-height: 100px;
+  }
+  .header .inner .logo a {
+    display: block;
+    height: 100%;
+  }
+  .header .inner .nav-pc {
+    max-width: 710px;
+    margin: 0 auto;
+  }
+  .header .inner .nav-pc .gnb {
+    height: 100%;
+    display: flex;
+    gap: 6.75rem;
+  }
+  .header .inner .nav-pc .gnb > li {
+    height: 100%;
+    position: relative;
+    font-family: "SUIT";
+  }
+  .header .inner .nav-pc .gnb > li .depth01 {
+    line-height: 100px;
+  }
+  .header .inner .nav-pc .gnb > li .depth02 {
+    font-family: "Pretendard-Regular";
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+  }
+  .header .inner .nav-pc .gnb > li .depth02 > li {
+    white-space: nowrap;
+    padding: 1.5625rem;
+    text-align: center;
+  }
+  .header .inner .util {
+    display: flex;
+    gap: 2.6875rem;
+  }
+  .header .inner .util .search_wrap img {
+    width: 100%;
+    height: 1.375rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .header .inner .util .search_wrap .search input {
+    width: 100%;
+    height: 3.125rem;
+    border: 2px solid #C4525A;
+    padding: 0 1%;
+  }
+  .header .inner .util .search_wrap .search_btn {
+    border: none;
+    background-color: transparent;
+  }
+  .header .inner .util .search_wrap .close_btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+  }
+  .header .inner .util .search_wrap .close_btn img {
+    width: 100%;
+    height: 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header .inner .util .util_mob_none {
+    display: flex;
+    gap: 2.6875rem;
+  }
+  .header .inner .menu_btn {
+    display: none;
+  }
+  .header .inner .nav-mob {
+    display: none;
+  }
+  .header .bg {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    display: none;
+  }
+  .header .bg span {
+    position: absolute;
+    top: 0;
+    left: -9999999px;
+  }
+  
+.header.active {
+    background:rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
+}
+.header.active .inner .util .search_wrap .search {
+    background-color: transparent;
+    backdrop-filter: opacity(0%);
+}
+
+
+/* footer */
+.footer {
+    font-family: 'Pretendard';
+    width: 100%;
+    height: 564px;
+    background-color: #402E32;
+    color: #fff;
+}
+.footer .footer_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5.2%;
+}
+.footer .footer_inner .footer_left {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.footer .footer_inner .footer_left .info{
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin-right: 9px;
+}
+.footer .footer_inner .footer_left .info p {
+    display: flex;
+    gap: 11px;
+}
+.footer .footer_inner .footer_left .info p>span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer .footer_inner .footer_left .info p>span::before {
+    content: '';
+    width: 1px;
+    height: 0.75rem;
+    background-color: #FFF7F0;
+    display: block;
+}
+.footer .footer_inner .footer_left .info p:nth-child(3)>span a {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 20px;
+}
+
+.footer .footer_inner .footer_left .copyright p:first-child {
+    font-family: 'Syncopate';
+    font-size: 6.25rem;
+}
+.footer .footer_inner .footer_left .copyright p:nth-child(2) {
+    font-family: 'SUIT';
+    font-weight: 300;
+    padding-top: 20px;
+}
+/* .footer_right */
+.footer .footer_inner .footer_right {
+    width: calc(1142px * 0.53);
+}
+.footer .footer_inner .footer_right .list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    line-height: 37px;
+}
+.footer .footer_inner .footer_right .list .list_title {
+    font-family: 'SUIT';
+    font-weight: 900;
+}
+.footer .footer_inner .footer_right .list .list_title .list_menu {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 0.938rem;
+
+}
+
+/* top_btn */
+.top_btn {
+  color: #402E32;
+  position: fixed;
+  bottom: 2%;
+  right: 1.9%;
+  cursor: pointer;
+}
+.top_btn > img {
+  width: 26px;
+  height: 26px;
+}
+.top_btn > p {
+  font-family: 'SUIT';
+  font-size: 0.875rem;
+  line-height: 2.313rem;
+}
+.top_btn.on {
+  position: relative;
+  bottom: 700px;
+}
+
+/* sns */
+.sns > a h5 {
+    font-size: 2.125rem;
+    font-family: 'SUIT';
+    font-weight: 100;
+}
+.sns > a h5>span {
+    font-weight: 700;
+}
+
+.swiper.mySwiper.mySwiper02 .swiper-initialized .swiper-horizontal .swiper-backface-hidden .swiper-watch-progress {
+  
+}

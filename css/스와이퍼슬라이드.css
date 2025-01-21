@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url(스와이퍼슬라이드.css);
+.product_system {
+  height: 100vh;
+}
+.product_system .porduct_inner {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  right: -125px;
+}
+.product_system .porduct_inner .produt_wrap {
+  position: relative;
+  height: 871px;
+  margin-left: auto;
+  max-width: 1314px;
+  width: calc(100% - 12px);
+}
+.product_system .porduct_inner .produt_wrap .produt_image {
+  width: 100%;
+  max-height: 594px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.product_system .porduct_inner .produt_wrap .produt_image::-webkit-scrollbar {
+  height: 2px;
+}
+.product_system .porduct_inner .produt_wrap .produt_image::-webkit-scrollbar-thumb {
+  background-color: rgba(64, 46, 50, 0.7176470588);
+}
+.product_system .porduct_inner .produt_wrap .produt_image::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+.product_system .porduct_inner .produt_wrap .produt_image .slide {
+  min-width: 464px;
+  width: 35.7473035%;
+  max-height: 594px;
+  overflow: hidden;
+}
+.product_system .porduct_inner .produt_wrap .produt_image .slide img {
+  max-height: 594px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product_system .porduct_inner .product_text {
+  background-color: aqua;
+}/*# sourceMappingURL=스와이퍼슬라이드.css.map */
