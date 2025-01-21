@@ -1,0 +1,5 @@
+jquery
+jquery-3.7.1.min.js (https://jquery.com/download/)
+
+jquery ui
+jquery-ui.min.js (https://jqueryui.com/download/)
